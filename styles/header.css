@@ -1,0 +1,73 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1.25rem;
+    font-size: 0.875rem;
+}
+
+/* NAVIGATION IN HEADER */
+.header-nav {
+    display: flex;
+    gap: 2.125rem;
+    font-weight: 500;
+}
+
+.header-nav .dropdown-button {
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.header-nav .arrow-icon {
+    background-image: url(/assets/svg/dropdown-arrow.svg);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+}
+
+
+/* CREATE ACCOUNT AND LOGIN BUTTONS */
+
+.account-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.account-buttons button {
+    padding: 0.625rem 1rem;
+    width: 7.188rem;
+    border-radius: 0.2rem;
+    display: flex;
+}
+
+.account-buttons button span {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.account-buttons button.create{
+    border: 0.063rem solid #FFFFFF;
+    background: transparent;
+    color: #FFFFFF
+}
+
+.account-buttons button.login{
+    border: 0.063rem solid #00AEFF;
+    background: #00AEFF;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.account-buttons button.login .user-icon{
+    background: url(/assets/svg/user-icon.svg);
+    background-repeat: no-repeat;
+    width: 1rem;
+    min-height: 1rem;
+}
