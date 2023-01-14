@@ -1,0 +1,160 @@
+
+.header-slider input {
+    display: none;
+}
+
+.header-slider label {
+    width: 3rem;
+    height: 3rem;
+}
+
+label[for="diabloIV"] {
+    background: url(/assets/banner-hero/icons/game-1.png);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+}
+
+label[for="hearthStone"] {
+    background: url(/assets/banner-hero/icons/game-2.png);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+}
+
+label[for="worldOfWarcraft"] {
+    background: url(/assets/banner-hero/icons/game-3.png);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+}
+
+label[for="diabloI"] {
+    background: url(/assets/banner-hero/icons/game-4.png);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+}
+
+label[for="starCraftII"] {
+    background: url(/assets/banner-hero/icons/game-5.png);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+}
+
+.background {
+    background: url(/assets/banner-hero/games/diablo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.background .filter {
+    background: radial-gradient(73.1% 73.1% at 52.6% 25.14%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: absolute;
+}
+
+.game-wrapper {
+    display: flex;
+    margin-top: 7rem;
+}
+
+.game-info {
+    margin: 0 0 0 14.25rem;
+}
+
+.game-info h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.375rem;
+    max-width: 36rem;
+    margin-bottom: 1rem;
+}
+
+.game-info p {
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+}
+
+.game-info button {
+    background-color: #00AEFF;
+    border: none;
+    padding: 0.875rem 2rem;
+    border-radius: 0.25rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.game-ruler {
+    margin-left: 14rem;
+}
+
+.game-logo {
+    background: url(/assets/banner-hero/games/diablo-logo.png);
+    background-repeat: no-repeat;
+    background-size: 17.5rem;
+    min-width: 17.5rem;
+    min-height: 10rem;
+    margin: 0 0 6rem 0;
+}
+
+.trailer {
+    background: url(/assets/banner-hero/games/diablo-animation-cover.png);
+    background-repeat: no-repeat;
+    background-size: 17.5rem;
+    min-width: 17.5rem;
+    min-height: 10rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer .circle {
+    background: linear-gradient(136.72deg, rgba(7, 7, 10, 0.86) 19.22%, rgba(15, 16, 22, 0.5) 76.59%);
+    border-radius: 10rem;
+    backdrop-filter: blur(1.5px);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailer .play {
+    background: url(/assets/svg/trailer-polygon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    left: 7%;
+    
+}
+
+.game-ruler p {
+    font-size: 0.813rem;
+    font-weight: 600;
+    text-align: end;
+    margin-bottom: 1rem;
+}

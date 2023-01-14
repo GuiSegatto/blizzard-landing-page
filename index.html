@@ -7,43 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blizzard - DevChallenges</title>
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles/header-nav.css">
 </head>
 
 <body>
-    <header class="menu">
-        <img src="./assets/logo-blizzard.png" alt="Blizzard Logo" class="blizzard-logo">
+    <div class="background">
+        <div class="filter"></div>
+    </div>
+    <header>
+        <div class="menu">
+            <img src="./assets/logo-blizzard.png" alt="Blizzard Logo" class="blizzard-logo">
 
-        <nav class="header-nav">
-            <div class="dropdown">
-                <button class="dropdown-button"> Jogos
-                    <div class="arrow-icon"></div>
-                </button>
-                <div class="dropdown-content">
+            <nav class="header-nav">
+                <div class="dropdown">
+                    <button class="dropdown-button"> Jogos
+                        <div class="arrow-icon"></div>
+                    </button>
+                    <div class="dropdown-content">
+                    </div>
                 </div>
-            </div>
 
-            <div class="dropdown">
-                <button class="dropdown-button"> Esportes
-                    <div class="arrow-icon"></div>
-                </button>
-                <div class="dropdown-content">
+                <div class="dropdown">
+                    <button class="dropdown-button"> Esportes
+                        <div class="arrow-icon"></div>
+                    </button>
+                    <div class="dropdown-content">
+                    </div>
                 </div>
+
+                <a href="#">Loja</a>
+
+                <a href="#">Notícias</a>
+
+                <a href="#">Suporte</a>
+            </nav>
+            <div class="account-buttons">
+                <button class="create"><span>Criar conta</span></button>
+                <button class="login">
+                    <div class="user-icon"></div><span>Logar</span>
+                </button>
             </div>
-
-            <a href="#">Loja</a>
-
-            <a href="#">Notícias</a>
-
-            <a href="#">Suporte</a>
-        </nav>
-        <div class="account-buttons">
-            <button class="create"><span>Criar conta</span></button>
-            <button class="login"><div class="user-icon"></div><span>Logar</span></button>
         </div>
-        
-    </header>
+        <div class="bottom-border"></div>
+        <div class="border-blue-detail"></div>
 
+        <section class="content-wrapper">
+            <div class="header-slider">
+                <input type="radio" id="diabloIV" value="diabloIV" checked>
+                <label for="diabloIV"></label>
+
+                <input type="radio" id="hearthStone" value="hearthStone">
+                <label for="hearthStone"></label>
+
+                <input type="radio" id="worldOfWarcraft" value="worldOfWarcraft">
+                <label for="worldOfWarcraft"></label>
+
+                <input type="radio" id="diabloI" value="diabloI">
+                <label for="diabloI"></label>
+
+                <input type="radio" id="starCraftII" value="all">
+                <label for="starCraftII"></label>
+            </div>
+            <div class="game-wrapper">
+                <div class="game-info">
+                    <h1>Retorne à escuridão com o game Diablo IV</h1>
+                    <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+                    <button>Jogue Agora</button>
+                </div>
+                <div class="game-ruler">
+                    <div class="game-logo"></div>
+                    <p>ASSISTA O TRAILER</p>
+                    <div class="trailer">
+                        <div class="circle">
+                            <div class="play"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 </body>
 
 </html>

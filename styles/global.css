@@ -15,9 +15,11 @@ a {
 }
 
 body {
-    background-color: rgb(75, 75, 75);
     color: #FFFFFF;
 }
 
+header {
+    padding: 0 18.75rem;
+}
 
-
+/* slider */
