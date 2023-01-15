@@ -2,36 +2,38 @@
 <html lang="en">
 
 <head>
+    <!-- META tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title And Icon -->
     <title>Blizzard - DevChallenges</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/banner.css">
-    <link rel="stylesheet" href="./styles/header-nav.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/menu.css">
+    <link rel="stylesheet" href="./CSS/banner.css">
+    <!-- JavaScript -->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <div class="background">
-        <div class="filter"></div>
-    </div>
+
     <header>
+        <div class="background-banner"></div>
+        <div class="background-filter"></div>
         <div class="menu">
-            <img src="./assets/logo-blizzard.png" alt="Blizzard Logo" class="blizzard-logo">
+            <div class="blizzard-logo"></div>
 
             <nav class="header-nav">
                 <div class="dropdown">
-                    <button class="dropdown-button"> Jogos
-                        <div class="arrow-icon"></div>
-                    </button>
+                    <button class="dropdown-button">Jogos</button>
                     <div class="dropdown-content">
                     </div>
                 </div>
 
                 <div class="dropdown">
-                    <button class="dropdown-button"> Esportes
-                        <div class="arrow-icon"></div>
-                    </button>
+                    <button class="dropdown-button">Esportes</button>
                     <div class="dropdown-content">
                     </div>
                 </div>
@@ -42,50 +44,78 @@
 
                 <a href="#">Suporte</a>
             </nav>
+
+            <div class="account-buttons-tablet">
+                <button class="create">Criar conta</button>
+                <button class="login">Logar</button>
+            </div>
+
             <div class="account-buttons">
-                <button class="create"><span>Criar conta</span></button>
-                <button class="login">
-                    <div class="user-icon"></div><span>Logar</span>
-                </button>
+                <button class="create">Criar conta</button>
+                <button class="login">Logar</button>
             </div>
         </div>
-        <div class="bottom-border"></div>
-        <div class="border-blue-detail"></div>
+        <div class="menu-divider"></div>
 
-        <section class="content-wrapper">
-            <div class="header-slider">
-                <input type="radio" id="diabloIV" value="diabloIV" checked>
-                <label for="diabloIV"></label>
+        <section class="banner">
+            <div class="banner-slider">
+                <input type="radio" id="diablo" name="slider" value="diablo" checked>
+                <label class="slider-button" for="diablo"></label>
 
-                <input type="radio" id="hearthStone" value="hearthStone">
-                <label for="hearthStone"></label>
+                <input type="radio" id="hearthstone" name="slider" value="hearthstone">
+                <label class="slider-button" for="hearthstone"></label>
 
-                <input type="radio" id="worldOfWarcraft" value="worldOfWarcraft">
-                <label for="worldOfWarcraft"></label>
+                <input type="radio" id="wow" name="slider" value="wow">
+                <label class="slider-button" for="wow"></label>
 
-                <input type="radio" id="diabloI" value="diabloI">
-                <label for="diabloI"></label>
+                <input type="radio" id="diabloI" name="slider" value="diabloI">
+                <label class="slider-button" for="diabloI"></label>
 
-                <input type="radio" id="starCraftII" value="all">
-                <label for="starCraftII"></label>
+                <input type="radio" id="starCraftII" name="slider" value="all">
+                <label class="slider-button" for="starCraftII"></label>
             </div>
-            <div class="game-wrapper">
-                <div class="game-info">
-                    <h1>Retorne à escuridão com o game Diablo IV</h1>
-                    <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
-                    <button>Jogue Agora</button>
-                </div>
-                <div class="game-ruler">
-                    <div class="game-logo"></div>
-                    <p>ASSISTA O TRAILER</p>
-                    <div class="trailer">
-                        <div class="circle">
-                            <div class="play"></div>
-                        </div>
-                    </div>
+
+            <div class="game-info">
+                <h1>Retorne à escuridão com o game Diablo IV</h1>
+                <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+                <button>Jogue Agora</button>
+            </div>
+
+
+            <div class="game-logo"></div>
+            <p class="trailer-text">ASSISTA O TRAILER</p>
+            <div class="trailer">
+                <div class="play">
+                    <svg class="play-circle" width="51" height="51" viewBox="0 0 51 51" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_b_9428_42)">
+                            <circle cx="25.5" cy="25.5" r="25.5" fill="url(#paint0_linear_9428_42)" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_b_9428_42" x="-3" y="-3" width="57" height="57"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="1.5" />
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_9428_42" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_9428_42"
+                                    result="shape" />
+                            </filter>
+                            <linearGradient id="paint0_linear_9428_42" x1="30.8652" y1="-10.0318" x2="59.2202"
+                                y2="20.0814" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#07070A" stop-opacity="0.86" />
+                                <stop offset="1" stop-color="#0F1016" stop-opacity="0.5" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg class="play-triangle" width="15" height="19" viewBox="0 0 15 19" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.2537 9.50005L0.55217 0.746321L0.552171 18.2538L14.2537 9.50005Z" fill="#00AEFF" />
+                    </svg>
                 </div>
             </div>
+
         </section>
+        <div class="banner-divider"></div>
     </header>
 </body>
 

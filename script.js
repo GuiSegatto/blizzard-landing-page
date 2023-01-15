@@ -14,7 +14,7 @@ function changeBannerInfo() {
     const gameHeaderText = document.querySelector('.game-info h1');
     const gameText = document.querySelector('.game-info p');
     const gameButton = document.querySelector('.game-info button');
-    const gameBackground = document.querySelector('.background');
+    const gameBackground = document.querySelector('.background-banner');
     const gameLogo = document.querySelector('.game-logo')
     const gameTrailer = document.querySelector('.trailer')
 

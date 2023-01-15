@@ -1,0 +1,124 @@
+/* MENU STYLES */
+.menu {
+    display: flex;
+    font-size: 0.875rem;
+    padding: 1.75rem 0;
+}
+
+.menu button {
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+
+/* BLIZZARD LOGO */
+.blizzard-logo {
+    content: url(/assets/blizzard-logo.svg);
+    width: 6.04vw;
+    margin-right: 5.83vw;
+}
+
+/* ACCOUNT BUTTONS (Frame 19)*/
+.account-buttons {
+    display: flex;
+    gap: 1rem;
+    max-height: 2.563rem;
+}
+
+.account-buttons .create {
+    background: transparent;
+    border: solid 0.063rem #FFFFFF;
+    padding: 0.625rem 1rem;
+}
+
+.account-buttons .login {
+    background-color: #00AEFF;
+    border: solid 0.063rem #00AEFF;
+    display: flex;
+    align-items: center;
+    gap: 0.394rem;
+    padding: 0.625rem 1.563rem;
+}
+
+.account-buttons .login::before {
+    content: url(/assets/svg/user-icon.svg);
+    max-width: 1.188rem;
+    max-height: 1.188rem;
+}
+
+
+/* [TABLET - 768px] - ACCOUNT BUTTONS (Frame 19)*/
+.account-buttons-tablet {
+    display: flex;
+    gap: 1rem;
+    max-height: 2.563rem;
+    display: none;
+}
+
+.account-buttons-tablet .create {
+    background: transparent;
+    border: solid 0.063rem #FFFFFF;
+    padding: 0.625rem 1rem;
+}
+
+.account-buttons-tablet .login {
+    background-color: #00AEFF;
+    border: solid 0.063rem #00AEFF;
+    display: flex;
+    align-items: center;
+    gap: 0.394rem;
+    padding: 0.625rem 1.563rem;
+}
+
+.account-buttons-tablet .login::before {
+    content: url(/assets/svg/user-icon.svg);
+    max-width: 1.188rem;
+    max-height: 1.188rem;
+}
+
+
+/* NAVIGATION BAR (Frame 16) */
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 2.125rem;
+    margin-right: 19.29vw;
+}
+
+.header-nav .dropdown button {
+    background: transparent;
+    border: none;
+    display: flex;
+    gap: 0.875rem;
+}
+
+.header-nav .dropdown button::after {
+    content: url('/assets/svg/dropdown-arrow.svg');
+    max-width: 0.625rem;
+    max-height: 0.313rem;
+    opacity: 0.6;
+}
+
+.header-nav a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* BORDER DIVIDER */
+
+.menu-divider {
+    height: 0.1rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.menu-divider::after {
+    content: '';
+    height: 0.1rem;
+    width: 2.75rem;
+    background-color: rgba(0, 174, 255, 1);
+    position: absolute;
+    margin-left: 15.78%;
+}
