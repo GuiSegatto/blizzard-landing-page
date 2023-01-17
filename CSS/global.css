@@ -8,6 +8,15 @@
     color: #FFFFFF;
 }
 
+body {
+    background-color: #000000;
+}
+
+header {
+    overflow: hidden;
+    position: relative;
+    border: 1px dashed red;
+}
 
 /* RULER */
 .menu, .banner {

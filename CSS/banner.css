@@ -22,31 +22,47 @@ label[for="starCraftII"] {
     height: 40rem;
 }
 
-.background-banner{
+.background-banner {
     background-image: url(/assets/banner-hero/games/diablo-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    
     z-index: -1;
-
     position: absolute;
     width: 100%;
     height: 1213px;
-    left: 0px;
-    top: -2rem;
  }
 
-.background-filter {
-    position: absolute;
+.background-overlay{
+    background-image: url(/assets/banner-hero/games/diablo-bg-overlay.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 100%;
     height: 1213px;
-    left: 0px;
-    top: -2rem;
     z-index: -1;
-    background: radial-gradient(73.1% 73.1% at 52.6% 25.14%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
+    position: absolute;
     mix-blend-mode: multiply;
-    opacity: 0.5;
- }
+}
+
+.wow-overlay{
+    display: none;
+    background-image: url(/assets/banner-hero/games/wow-bg-overlay-crystals.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 1213px;
+    z-index: -1;
+    position: absolute;
+    mix-blend-mode: screen;
+}
+
+
+.banner-divider{
+    content: '';
+    height: 0.188rem;
+    width: 29vw;
+    background-color: #00AEFF;
+}
+
 
 
 /* SLIDER */
@@ -106,14 +122,6 @@ label[for="starCraftII"] {
     width: fit-content;
 }
 
-/* GAME LOGO */
-/* .g.ame-ruler {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 21.875rem;
-} */
-
 .game-logo {
     background: url(/assets/banner-hero/games/diablo-logo.png);
     background-repeat: no-repeat;
@@ -140,28 +148,26 @@ label[for="starCraftII"] {
     top: 439px;
 
 }
+
 .trailer {
     background: url(/assets/banner-hero/games/diablo-animation-cover.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 9.875rem;
+    background-position: center;
+
+    width: 17.5rem;
+    height: 10.813rem;
+    max-height: 9.875rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     position: absolute;
-    width: 14.58vw;
-    height: 158px;
     left: 69.58vw;
     top: 475px;
-}
 
-
-.animate {
-    background: url(/assets/banner-hero/games/diablo-animation.gif);
-    background-repeat: no-repeat;
-    width: 17.5rem;
-    height: 9.875rem;
+    border-radius: 0.25rem;
+    box-shadow: 0px 15px 46px 11px rgba(0,0,0,1);
 }
 
 .play {
@@ -194,11 +200,4 @@ label[for="starCraftII"] {
 
 .trailer:hover .play-circle linearGradient {
     display: none;
-}
-
-.banner-divider{
-    content: '';
-    height: 0.188rem;
-    width: 29.17vw;
-    background-color: #00AEFF;
 }
