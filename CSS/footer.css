@@ -1,0 +1,143 @@
+
+footer {
+    min-height: 53.25rem;
+}
+
+/* Background and images */
+.footer-background{
+    background-image: url(/assets/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 852px;
+}
+
+.app{
+    background-image: url(/assets/ilustrations/app.png);
+    background-repeat: no-repeat;
+    height: 852px;
+    width: 1145px;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+}
+
+.app-mini{
+    background-image: url(/assets/ilustrations/app-mini.png);
+    background-repeat: no-repeat;
+    height: 336px;
+    width: 643px;
+    position: absolute;
+    bottom: 0;
+    top: 47%;
+    right: 13.5%;
+}
+
+.battlenet-logo{
+    background-image: url(/assets/logo-battle-net.png);
+    height: 16px;
+    background-repeat: no-repeat;
+}
+
+.battlenet-launcher {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 53.25rem;
+}
+
+
+/* Text */
+.download-wrapper h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 1.875rem 0;
+}
+
+.battlenet-info p {
+    color: #828792;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+/*  */
+.battlenet-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+/* Button */
+.download-launcher {
+    background: #00AEFF;
+    border-radius: 0.25rem;
+    width: 16.625rem;
+    height: 3.25rem;
+    padding: 0.875rem 2rem;
+    border: none;
+    margin: 2.5rem 0;
+}
+
+.download-launcher span{
+    font-weight: 600;
+}
+
+
+/* Mobile App Text */
+.mobile-app {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #E5E5E5;
+    width: 13.75rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* SVG Icons */
+.all-games-text::before {
+    content: '';
+    background-image: url(/assets/svg/footer-icon-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 1.125rem;
+    width: 1.125rem;
+    margin-right: 1rem;
+}
+
+.connect-text::before {
+    content: '';
+    background-image: url(/assets/svg/footer-icon-2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 1.125rem;
+    width: 1.125rem;
+    margin-right: 1rem;
+}
+
+.buy-text::before {
+    content: '';
+    background-image: url(/assets/svg/footer-icon-3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 1.125rem;
+    width: 1.125rem;
+    margin-right: 1rem;
+}
+
+.mobile-app::before {
+    content: '';
+    background-image: url(/assets/svg/footer-mobile-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 1.125rem;
+    width: 1.125rem;
+    margin-right: 1rem;
+}

@@ -12,16 +12,12 @@ body {
     background-color: #000000;
 }
 
-header {
+header, footer {
     overflow: hidden;
     position: relative;
-    border: 1px dashed red;
 }
 
 /* RULER */
-.menu, .banner {
+.menu, .banner, .battlenet-launcher {
     margin: 0 15.78vw;
 }
-
-/* LEMBRAR DE AJUSTAR OS BACKGROUND LAYERS E IMAGES (FIGMA DOWNLOAD) */
-/* GIFS E OVERLAY TBM */
