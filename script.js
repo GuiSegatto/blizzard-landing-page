@@ -4,6 +4,7 @@ const gameTrailer = document.querySelector('.trailer')
 /* on load */
 disableSliderGames()
 animateTrailer('diablo')
+updateDownloadButton()
 bannerGameSlider.forEach(item => item.addEventListener('change', changeBannerInfo))
 
 
@@ -77,4 +78,38 @@ function animateTrailer(game) {
     gameTrailer.addEventListener('mouseout', () => {
         gameTrailer.style.backgroundImage = `url(/assets/banner-hero/games/${game}-animation-cover.png)`;
     });
+}
+
+function updateDownloadButton() {
+    OS = getUserOS()
+    const logo = document.querySelector('#OSLogo')
+    const osName = document.querySelector('#OSName')
+    const downloadTo = "Baixar para o "
+
+    if (OS === "mac") {
+        logo.style.backgroundImage = `url(/assets/svg/os-mac-icon.svg)`
+        osName.textContent = downloadTo + 'MacOS'
+    }
+    else if (OS === "linux") {
+        logo.style.backgroundImage = `url(/assets/svg/os-linux-icon.svg)`
+        osName.textContent = downloadTo + 'Linux'
+    }
+    else {
+        logo.style.backgroundImage = `url(/assets/svg/os-windows-icon.svg)`
+        osName.textContent = downloadTo + 'Windows'
+    }
+}
+
+function getUserOS() {
+    let OS
+    if (navigator.userAgent.indexOf("Win") != -1) {
+        OS = "windows";
+    }
+    if (navigator.userAgent.indexOf("Mac") != -1) {
+        OS = "mac";
+    }
+    if (navigator.userAgent.indexOf("Linux") != -1) {
+        OS = "linux";
+    }
+    return OS
 }
