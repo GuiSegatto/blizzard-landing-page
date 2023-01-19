@@ -81,6 +81,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.download-launcher:hover {
+    background-color: #40c2ff;
 }
 
 .download-launcher span{
