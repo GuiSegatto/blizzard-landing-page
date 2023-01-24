@@ -1,0 +1,106 @@
+/* HEADER STYLES */
+.exclusive-games-header {
+    margin: 5.125rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text-wrapper .text-gray {
+    font-size: 0.938rem;
+    font-weight: 600;
+    margin-top: 0.813rem;
+}
+
+.header-text-wrapper .text-white {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 11rem;
+    line-height: 110.2%;
+}
+
+.exclusive-games-header .text-blue {
+    font-weight: 600;
+}
+
+.exclusive-games-header .text-blue::before {
+    content: '';
+    background-image: url(/assets/svg/exclusive-games/squares-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 0.563rem;
+    width: 0.563rem;
+    margin-right: 0.625rem;
+}
+
+.header-text-wrapper {
+    display: flex;
+    gap: 10.5rem;
+}
+
+.platform-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0 27rem 0 10rem
+}
+
+
+
+/* EXCLUSIVE GAMES LIST */
+.games-wrapper {
+    display: flex;
+    gap: 1.938rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+
+.card-game-background {
+    width: 18.813rem;
+    height: 25.75rem;
+    
+
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 1.125rem;
+}
+
+.card-game-overlay {
+    width: 18.813rem;
+    height: 25.75rem;
+
+    background-image: url(/assets/overlay.png);
+    background-size: contain;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.card-game-logo {
+    width: 10rem;
+    height: 6.563rem;
+
+    background-size: contain;
+
+    position: relative;
+    top: 16.688em;
+    left: 4.431em;
+}
+
+.card-game-name {
+    font-weight: 600;
+    color: #E5E5E5;
+    font-size: 1.188rem;
+    margin-bottom: 0.25rem;
+}
+
+.card-game-genre{
+    font-weight: 400;
+    color: #E5E5E5;
+    font-size: 0.938rem;
+    opacity: 0.8;
+}
+

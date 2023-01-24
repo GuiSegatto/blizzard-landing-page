@@ -113,3 +113,60 @@ function getUserOS() {
     }
     return OS
 }
+
+
+
+const API_URL = 'https://api.brchallenges.com/api/blizzard/games'
+
+async function getAPI(url) {
+
+    const response = await fetch(url);
+
+    let data = await response.json();
+    createNewCard(data);
+}
+
+getAPI(API_URL);
+
+function createNewCard(games) {
+
+    for (let game of games){
+        const gamesWrapper = document.getElementsByClassName('games-wrapper');
+        const newCard = document.createElement('div');
+        newCard.className = 'card';
+        gamesWrapper[0].appendChild(newCard);
+        setCardBackground(newCard, game.image, game.logo);
+        setGameInfo(newCard, game.name, game.category)
+    }
+
+
+}
+
+function setCardBackground(card, bgImage, logo) {
+    const background = document.createElement('div');
+    background.className = 'card-game-background';
+    background.style.backgroundImage = `url(${bgImage})`;
+
+    const overlay = document.createElement('div');
+    overlay.className = 'card-game-overlay';
+    background.appendChild(overlay);
+
+    const gameLogo = document.createElement('div');
+    gameLogo.className = 'card-game-logo';
+    gameLogo.style.backgroundImage = `url(${logo})`;
+    background.appendChild(gameLogo);
+
+    card.appendChild(background);
+}
+
+function setGameInfo(card, gameName, gameCategory) {
+    const name = document.createElement('div');
+    name.className = 'card-game-name';
+    name.textContent = `${gameName}`
+    card.appendChild(name);
+
+    const category = document.createElement('div');
+    category.className = 'card-game-genre';
+    category.textContent  = `${gameCategory}`
+    card.appendChild(category)
+}

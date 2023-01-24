@@ -17,7 +17,20 @@ header, footer {
     position: relative;
 }
 
+/* Text Colors */
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-gray {
+    color: #8F9199;
+}
+
+.text-blue {
+    color: #00AEFF;
+}
+
 /* RULER */
-.menu, .banner, .battlenet-launcher {
+.menu, .banner, .battlenet-launcher, .exclusive-games {
     margin: 0 15.78vw;
 }
