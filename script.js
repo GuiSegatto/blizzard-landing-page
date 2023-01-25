@@ -129,34 +129,48 @@ async function getAPI(url) {
 getAPI(API_URL);
 
 function createNewCard(games) {
+    const gamesWrapper = document.getElementsByClassName('games-wrapper');
 
     for (let game of games){
-        const gamesWrapper = document.getElementsByClassName('games-wrapper');
         const newCard = document.createElement('div');
         newCard.className = 'card';
         gamesWrapper[0].appendChild(newCard);
         setCardBackground(newCard, game.image, game.logo);
         setGameInfo(newCard, game.name, game.category)
-    }
+    };
 
-
+     const lastCard = document.createElement('div');
+     lastCard.className = 'last-card';
+     gamesWrapper[0].appendChild(lastCard);
+     const blizzardLogo = document.createElement('img');
+     blizzardLogo.src = './assets/blizzard-logo.svg';
+     lastCard.appendChild(blizzardLogo);
+     const lastCardText = document.createElement('p');
+     lastCardText.textContent = 'Ver todos jogos';
+     lastCard.appendChild(lastCardText);
 }
 
+
 function setCardBackground(card, bgImage, logo) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'card-background-wrapper';
+
     const background = document.createElement('div');
     background.className = 'card-game-background';
     background.style.backgroundImage = `url(${bgImage})`;
-
+    wrapper.appendChild(background);
+    
     const overlay = document.createElement('div');
     overlay.className = 'card-game-overlay';
-    background.appendChild(overlay);
+    wrapper.appendChild(overlay);
 
     const gameLogo = document.createElement('div');
     gameLogo.className = 'card-game-logo';
     gameLogo.style.backgroundImage = `url(${logo})`;
-    background.appendChild(gameLogo);
+    wrapper.appendChild(gameLogo);
 
-    card.appendChild(background);
+
+    card.appendChild(wrapper);
 }
 
 function setGameInfo(card, gameName, gameCategory) {

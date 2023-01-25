@@ -50,33 +50,54 @@
 /* EXCLUSIVE GAMES LIST */
 .games-wrapper {
     display: flex;
-    gap: 1.938rem;
+    gap: 3rem 1.75rem;
     flex-wrap: wrap;
+    margin-bottom: 6.75rem;
 }
 
-.card {
-    margin-bottom: 2rem;
-}
+.card-background-wrapper {
+    overflow: hidden;
+    width: 18.813rem;
+    height: 25.75rem;
+    position: relative;
+    margin-bottom: 1.125rem;
 
+    border-radius: 4px;
+}
 
 .card-game-background {
     width: 18.813rem;
-    height: 25.75rem;
-    
+    height: 26.75rem;
 
-    background-size: cover;
-    border-radius: 4px;
-    margin-bottom: 1.125rem;
+    background-size: contain;
+    z-index: -1;
+    position: absolute;
+    transition: transform 0.25s ease-out;
+    transform-origin: bottom;
+}
+
+.card:hover .card-game-background {
+    transform: scale(1.08);
+
 }
 
 .card-game-overlay {
+
+    
     width: 18.813rem;
     height: 25.75rem;
 
-    background-image: url(/assets/overlay.png);
-    background-size: contain;
+    background: linear-gradient(182.71deg, #020203 2.26%, rgba(2, 2, 3, 0) 73.74%);
+    rotate: 180deg;
     opacity: 0.4;
     position: absolute;
+
+    transition: opacity 0.25s ease-in;
+}
+
+.card:hover .card-game-overlay{
+    opacity: 0.85;
+    rotate: 180deg;
 }
 
 .card-game-logo {
@@ -102,5 +123,34 @@
     color: #E5E5E5;
     font-size: 0.938rem;
     opacity: 0.8;
+}
+
+.last-card {
+    width: 18.813rem;
+    height: 25.75rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.25rem;
+    
+    border: 0.101rem solid #212428;
+    border-radius: 4px;
+}
+
+.last-card p {
+    font-weight: 600;
+}
+
+.last-card p::before {
+    content: '';
+    background-image: url(/assets/svg/exclusive-games/squares-icon-white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 0.563rem;
+    width: 0.563rem;
+    margin-right: 0.625rem;
 }
 
